@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SESYNC CSI 2015</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .inverse {
+        background: #303031;
+        color: #f3f3f3;
+        text-shadow: 0 0 20px #333;
+		background-image: url(bkgrnd.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 500px;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+	  .footer {
+			position:fixed;
+			bottom:0px;
+			height:35px;
+			width:100%;
+			background-color:#171717;
+			color:#A1A1A7;
+			font-family:Lucidia;
+			font-size: 0.75em;
+	   }
+	   
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+layout: true
+class: center, middle, inverse
+---
+# SESYNC
+# Computational Summer Institute
+# 2015
+---
+class: inverse
+layout: false
+# Welcome!
+
+1. Goals
+
+2. Workshops Mechanics
+
+2. Overview of SESYNC's CI
+
+3. Working in RStudio Server
+
+.footer[NATIONAL SOCIO-ENVIRONMENTAL SYNTHESIS CENTER]
+---
+class: inverse
+layout: false
+# Goals
+
+- Develop and/or progress on the techincal aspects of your research project
+
+- Understand how various services and tools connect
+
+- Know what tools are available for dissemination and preservation of code, data, and results
+
+- Know how to formulate questions and get help (from humans and internet)
+
+- Apply the knowledge in future projects
+
+.footer[NATIONAL SOCIO-ENVIRONMENTAL SYNTHESIS CENTER]
+---
+class: inverse
+layout: false
+
+# Workshop Mechanics
+
+- Hands-on, type along, mix of lecture and exercises
+
+- Agenda outline
+
+- Sticky notes: red for troubles or questions; green when you're ready; also for assessment
+
+- Etherpad: session notes and questions --> sesync.us/csi2015ep
+
+---
+class: inverse
+layout: false
+
+# SESYNC's CI
+
+## Three types of components
+
+- **Data Storage**: file shares and SQL database servers
+- **Processing Resources**: Virtualization cluster
+- **Gateways**: RStudio, ssh, files.sesync.org, custom virtual machines
+
+<img src="CI.png" style="width: 700px;"/>
+
+.footer[NATIONAL SOCIO-ENVIRONMENTAL SYNTHESIS CENTER]
+???
+- Point out the three components and how they relate on the diagram
+
+---
+class: inverse
+layout: false
+
+# Working in RStudio Server
+
+- RStudio.sesync.org
+
+- Access to all storage and processing resources
+
+- Integrates version control of code (and other text files)
+
+- Navigating data resources:
+	- Home directory ~
+	- Group data resources /nfs/...
+	
+
+
+.footer[NATIONAL SOCIO-ENVIRONMENTAL SYNTHESIS CENTER]
+???
+- Will be working in it because it's a one stop shop to all our resources
+	- connects to storage (home directory, group data, databases)
+	- run regular R backed by by big memory AND can submit larger jobs to the scheduled cluster
+	- point and click interface to 
+- Topics and tools we'll cover relevant to other environments (R and many data/programming concepts, script submission, SQL data mngmnt, version control)
+- Data uploaded through files.sesync available in /nfs/...
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
